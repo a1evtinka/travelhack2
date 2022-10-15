@@ -3,7 +3,7 @@ import './tinder.css';
 import Header from './Header';
 import Person from './Person';
 import Lonely from './Lonely';
-import data from './data.json';
+import {data} from './data.js';
 
 const Tinder = () => {
     const [people, setPeople] = useState(data);
@@ -44,7 +44,7 @@ const Tinder = () => {
     };
 
     return (
-        <div className="app">
+        <div className="tinder">
             <Header />
             {people[1] ? (
                 <Person

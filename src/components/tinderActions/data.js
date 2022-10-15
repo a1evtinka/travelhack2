@@ -1,14 +1,21 @@
-[
+export const data = [
   {
-    "id": 0,
-    "name": "Karl",
-    "desc": "Developer",
-    "age": 26,
+    "id":1,
+    "title": "Karl",
+    "shortDesc": "Developer",
+    "longDesc": "DeveloperDeveloperDeveloperDeveloperDeveloper",
+    "startDate": new Date('October 10, 2022').getDate(),
+    "endDate": new Date('Novemver 1, 2022').getDate(),
+    "placeStart": "Moscow",
+    "placeEnd": "Kazan",
     "image": "1.jpg",
+    "activity": 'Женское',
     "likedUsers": [],
-    "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 10000,
+    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
     "id": 1,
@@ -19,7 +26,8 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 20000
   },
   {
     "id": 2,
@@ -30,7 +38,8 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 30000
   },
   {
     "id": 3,
@@ -41,7 +50,8 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 40000
   },
   {
     "id": 4,
@@ -52,7 +62,8 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 50000
   },
   {
     "id": 5,
@@ -63,7 +74,8 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 60000
   },
   {
     "id": 6,
@@ -74,6 +86,7 @@
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
-    "likedBy": []
+    "likedBy": [],
+    "price": 70000
   }
 ]
