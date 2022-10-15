@@ -1,20 +1,47 @@
 export const data = [
   {
     "id":1,
-    "title": "Karl",
-    "shortDesc": "Developer",
-    "longDesc": "DeveloperDeveloperDeveloperDeveloperDeveloper",
+    "title": "Поездка на Приэльбрусье",
+    "desc": 
+    "Предлагаю поехать походить по пешеходным маршрутам в этих местах проходящих по сосновым лесам и живописным ущельям, украшенным ледниками и водопадами.",
     "startDate": new Date('October 10, 2022').getDate(),
     "endDate": new Date('Novemver 1, 2022').getDate(),
-    "placeStart": "Moscow",
-    "placeEnd": "Kazan",
+    "placeStart": "Москва",
+    "placeEnd": "Нальчик",
     "image": "1.jpg",
-    "activity": 'Женское',
+    "hotel": {
+      title: "Балкария",
+      link: "/hotel/h1"
+      },
+    "leisure": [
+      {title: "Путешествие к Эльбрусу и озеру Гижгит", link: "/leisures/leis1"},
+      {title: "Два дня в Северном Приэльбрусье", link: "/leisures/leis2"},
+      {title: "Загадочный Худесский лабиринт", link: "/leisures/leis3"},
+        ],
+    "activity": 'Активный',
     "likedUsers": [],
     "dislikedUsers": [],
     "likedBy": [],
-    "price": 10000,
+    "price": 30000,
     "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
+  },
+  {
+    "id":2,
+    "title": "Поездка на Приэльбрусье",
+    "desc": 
+    "Предлагаю поехать походить по пешеходным маршрутам в этих местах проходящих по сосновым лесам и живописным ущельям, украшенным ледниками и водопадами.",
+    "startDate": new Date('October 10, 2022').getDate(),
+    "endDate": new Date('Novemver 1, 2022').getDate(),
+    "placeStart": "Moscow",
+    "placeEnd": "Nalchik",
+    "image": "1.jpg",
+    "activity": 'Активный',
+    "likedUsers": [],
+    "dislikedUsers": [],
+    "likedBy": [],
+    "price": 30000,
+    "organizator": {organizatorName:'Надежда Викторовна',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
