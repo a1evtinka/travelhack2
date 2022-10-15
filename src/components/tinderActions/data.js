@@ -9,11 +9,20 @@ export const data = [
     "placeStart": "Moscow",
     "placeEnd": "Kazan",
     "image": "1.jpg",
-    "activity": 'Женское',
+    "activity": 'Женское', // тэги
     "likedUsers": [],
     "dislikedUsers": [],
     "likedBy": [],
     "price": 10000,
+    "hotel": {
+      title: "Клён",
+      link: "/hotel/h1"
+      },
+    "leisure": [
+      {title: "Краеведческий музей", link: "/leisures/leis1"},
+      {title: "Концерт рок музыки", link: "/leisures/leis2"},
+      {title: "Фестиваль яблока", link: "/leisures/leis3"},
+    ],
     "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
