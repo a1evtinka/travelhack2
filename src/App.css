@@ -1,4 +1,4 @@
-.App {
+.tinder {
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.topMenu {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.layout {
+  background-color: #E8DBC6;
+}
+
+.footer {
+  top: 566px;
+  display: flex;
 }
