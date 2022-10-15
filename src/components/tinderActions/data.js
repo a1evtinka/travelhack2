@@ -28,21 +28,30 @@ export const data = [
   },
   {
     "id":2,
-    "title": "Поездка на Приэльбрусье",
+    "title": "Культурная программа в Санкт-Петербурге",
     "desc": 
-    "Предлагаю поехать походить по пешеходным маршрутам в этих местах проходящих по сосновым лесам и живописным ущельям, украшенным ледниками и водопадами.",
-    "startDate": new Date('October 10, 2022').getDate(),
-    "endDate": new Date('Novemver 1, 2022').getDate(),
-    "placeStart": "Moscow",
-    "placeEnd": "Nalchik",
-    "image": "1.jpg",
-    "activity": 'Активный',
+    "Я мама с детишками, хочу объедениться с другими Родителями чтобы сводить своих отпрысков в культурные места Питера",
+    "startDate": new Date('October 15, 2022').getDate(),
+    "endDate": new Date('Novemver 11, 2022').getDate(),
+    "placeStart": "Гондурас",
+    "placeEnd": "Санкт-Петербург",
+    "image": "2.jpg",
+    "hotel": {
+      title: "Гельвеция",
+      link: "/hotel/h2"
+      },
+    "leisure": [
+      {title: "Парадные залы Зимнего дворца, впечатляющие своим богатым убранством, а также экспозиции Старого и Нового Эрмитажа", link: "/leisures/leis4"},
+      {title: "Петергоф и Кронштадт", link: "/leisures/leis5"},
+      {title: "Петропавловская крепость для детей", link: "/leisures/leis6"},
+        ],
+    "activity": 'С детьми',
     "likedUsers": [],
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Надежда Викторовна',organizatorAva: '3.jpg', organizatorRating: 4.2},
-    "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
+    "organizator": {organizatorName:'Марья Петровна',organizatorAva: '7.jpg', organizatorRating: 5.0},
+    "participant": [{participantName:'Екатерина', participantAva:'3.jpg'}]
   },
   {
     "id": 1,
