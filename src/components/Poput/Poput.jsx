@@ -1,17 +1,9 @@
 import React, {useRef, useState} from "react";
-import {data} from './data.js';
+import {data} from '../tinderActions/data.js';
 import Tinder from "../tinderActions/Tinder";
 
 
 const Poput = () => {
-    Array.prototype.intersect = function intersect(a, ...b) {
-        const c = function (a, b) {
-            b = new Set(b);
-            return a.filter((a) => b.has(a));
-        };
-        return undefined === a ? this : intersect.call(c(this, a), ...b);
-    };
-
     const [activity,setActivity] = useState([])
     const [state, setState] = useState([])
     const inputPriceMin = useRef(null);
@@ -20,54 +12,83 @@ const Poput = () => {
     const inputDateEnd = useRef(null);
     const inputPlaceStart = useRef(null);
     const inputPlaceEnd =useRef(null);
-    const filterPriceMin = data.filter(el=>el.price >= inputPriceMin)
-    const filterPriceMax = data.filter(el=>el.price <= inputPriceMax)
     /**
      * ПОФИКСИТЬ С ДАТАМИ
      *   const filterDateStart = data.filter(el=> el.beginDate.toDate() >= inputDateStart.val(moment).toDate())
      *     const filterDateEnd = data.filter(el=> moment(el.beginDate).unix() <= moment(inputDateEnd).unix())
      */
-    const filterPlaceStart = data.filter(el=>el.placeStart === inputPlaceStart)
-    const filterPlaceEnd = data.filter(el=>el.placeEnd === inputPlaceEnd)
 
     const setWomen = () => {
-        setActivity([...activity,'Женское'])
+        if (!activity.includes('Женское')) {
+            setActivity( 'Женское')
+        } else {
+            setActivity('')
+        }
     }
 
     const setActiveSport = () => {
-        setActivity([...activity,'Активный'])
+        if (!activity.includes('Активный')) {
+        } else {
+            setActivity('')
+        }
     }
 
     const setChildren = () => {
-        setActivity([...activity,'С детьми'])
+        if (!activity.includes('С детьми')) {
+            setActivity('С детьми')
+        } else {
+            setActivity('')
+        }
     }
 
     const setDance = () => {
-        setActivity([...activity,'Тусовки'])
+        if (!activity.includes('Тусовки')) {
+            setActivity('Тусовки')
+        } else {
+            setActivity('')
+        }
     }
 
-    const filterActivity = activity.filter(el=> !data.activity.includes(el))
 
     const handleFilter = () => {
-        setState(filterPriceMin.intersect(filterPriceMax,filterPlaceStart,filterPlaceEnd,filterActivity))
-    }
+        if(inputPriceMin.current.value) {
+            setState(data.filter(el => el.price >= +(inputPriceMin.current.value)))
+        }
+
+            if(inputPriceMax.current.value) {
+                setState(data.filter(el => el.price <= +(inputPriceMax.current.value)))
+            }
+
+                if(inputPlaceStart.current.value) {
+                    setState(data.filter(el => el.placeStart === inputPlaceStart.current.value))
+                }
+
+                    if(inputPlaceEnd.current.value) {
+                        setState(data.filter(el=>el.placeEnd === inputPlaceStart.current.value))
+                    }
+
+                    if(activity.length) {
+                        setState(data.filter(el=>el.activity === activity))
+                    }
+             }
 
 
     return (
-        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <>
+        {/*<div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>*/}
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 <input type='number' ref={inputPriceMin} placeholder='Минимальная стоимость в рублях' />
                 <input type='number' ref={inputPriceMax} placeholder='Максимальная стоимость в рублях'/>
             </div>
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 <input type='date' ref={inputDateStart} placeholder='Дата начала ивента'/>
                 <input type='date' ref={inputDateEnd} placeholder='Дата окончания ивента' />
             </div>
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 <input type='text' ref={inputPlaceStart} placeholder='Место отправления'/>
                 <input type='text' ref={inputPlaceEnd} placeholder='Финиш' />
             </div>
-                <fieldset>
+                <fieldset style={{display:'flex', flexDirection:'column',justifyContent:'center'}}>
                     <legend>Выберите особенности:</legend>
                     <div>
                         <input type="checkbox" name="Женское" onClick={setWomen}/>
@@ -86,9 +107,12 @@ const Poput = () => {
                         <label htmlFor="horns">Тусовки</label>
                     </div>
                 </fieldset>
-            <button onClick={handleFilter}>Отфильтровать</button>
-            {/*{state && <Tinder data={state}/>}*/}
-        </div>
+            <div style={{display:'flex', justifyContent:'center'}}>
+                <button onClick={handleFilter}>Отфильтровать</button>
+            </div>
+            {state.length ? <Tinder data={state}/> : <div></div>}
+        {/*</div>*/}
+            </>
     )
 }
 
