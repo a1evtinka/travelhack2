@@ -2,10 +2,10 @@ import React from 'react';
 import Logo from './Logo';
 
 const Header = () => (
-    <header>
+    <header style={{backgroundColor:'rgba(30, 14, 0, 0.36)'}}>
         <div className="fl">
             <button type="button">
-                <img src="img/misc/user.png" alt="User Settings" />
+                <img src="img/misc/user.png" alt="User Settings"/>
             </button>
         </div>
 
