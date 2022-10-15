@@ -6,7 +6,7 @@ import React from "react";
 const NavBar = () => {
     // const navigate = useNavigate()
     return (
-        <div style={{display:"flex", justifyContent:'space-between', alignItems:'center', width:'390px',height:'60px'}}>
+        <div style={{position:'fixed',bottom:'0px',display:"flex", justifyContent:'space-between', alignItems:'center', width:'390px',height:'60px'}}>
             <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
                     <img src="img/misc/search.svg" alt="Like User" style={{width:'30px', height:'30px',margin:'5px'}}/>
                     <p style={{margin:'0', fontSize:'15px'}}>Поиск</p>

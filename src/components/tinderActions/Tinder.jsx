@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './tinder.css';
-import Header from './Header';
 import Person from './Person';
 import Lonely from './Lonely';
-import {data} from './data.js';
 
-const Tinder = () => {
+
+const Tinder = ({data}) => {
     const [people, setPeople] = useState(data);
     const [likedUsers, setLikedUsers] = useState([]);
     const [dislikedUsers, setDislikedUsers] = useState([]);
@@ -45,7 +44,6 @@ const Tinder = () => {
 
     return (
         <div className="tinder">
-            <Header />
             {people[1] ? (
                 <Person
                     key={people[1].id}
@@ -55,7 +53,7 @@ const Tinder = () => {
                 />
             ) : (
                 <Lonely
-                    activeUserImage={people[activeUser].image}
+                    activeUserImage={people[activeUser]?.image}
                     likedUsers={likedUsers}
                 />
             )}

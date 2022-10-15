@@ -8,7 +8,7 @@ const Person = ({ person, modifySuperficialChoices }) => {
         <>
             <div className="person">
                 <div className="person-photo">
-                    <img src={`/img/users/${image}`} alt={name} style={{height:'507px',width:"390px"}}/>
+                    <img src={`/img/users/${image}`} alt={name} style={{height:'450px',width:"390px"}}/>
                 </div>
 
                 <div className="person-description" style={{textAlign:'center', padding:'0px'}}>
