@@ -51,9 +51,11 @@ export const data = [
     "age": 35,
     "image": "2.jpg",
     "likedUsers": [],
+    "activity": 'Женское',
     "superLikedUsers": [],
     "dislikedUsers": [],
     "likedBy": [],
+    "placeStart": "Moscow",
     "price": 20000
   },
   {
@@ -65,6 +67,7 @@ export const data = [
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
+    "activity": 'Женское',
     "likedBy": [],
     "price": 30000
   },
@@ -74,6 +77,7 @@ export const data = [
     "desc": "Manager",
     "age": 45,
     "image": "4.jpg",
+    "activity": 'Женское',
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],
