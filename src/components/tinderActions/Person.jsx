@@ -1,8 +1,9 @@
 import React from 'react';
 import Actions from './Actions';
+import './person.css'
 
 const Person = ({ person, modifySuperficialChoices }) => {
-    const { name, desc, age, image } = person;
+    const { name, desc, image } = person;
 
     return (
         <>
@@ -13,9 +14,10 @@ const Person = ({ person, modifySuperficialChoices }) => {
 
                 <div className="person-description" style={{textAlign:'center', padding:'0px'}}>
                     <p className="person-name-age" style={{textAlign:'center'}}>
-                        {name}, <span>{age}</span>
+                        {person.title}
                     </p>
-                    <p className="person-info" style={{textAlign:'center'}}>{desc}</p>
+                    <p>{person.startDate} - {person.endDate}</p>
+                    <p className="truncate-text" >{desc}</p>
                 </div>
             </div>
 
