@@ -16,7 +16,7 @@ const HelloThere = () => {
     <div className="event_info_container">
       <div className="event_avatar">
         <Avatar
-          src={props.image}
+          src={`/img/event/${props.image}`}
           alt={props.title}
           sx={{ width: 200, height: 200 }}
         ></Avatar>
@@ -54,7 +54,7 @@ const HelloThere = () => {
         <td>Отель:</td>
         <td>
           <div>
-            <Link to={props.hotel.link}>{props.hotel.title}</Link>
+            <p>{props.hotel.title}</p>
             <br />
             <button
               onClick={() => navigate(`${props.hotel.link}`)}
@@ -71,7 +71,7 @@ const HelloThere = () => {
           <div>
             {props.leisure.map((leis, index) => (
               <div key={index}>
-                <Link to={leis.link}>{leis.title}</Link>
+                <p>{leis.title}</p>
                 <br />
                 <button
                   onClick={() => navigate(`${leis.link}`)}
@@ -106,7 +106,7 @@ const HelloThere = () => {
           }
         >
           <Avatar
-            src={props.organizator.organizatorAva}
+            src={`/img/users/${props.organizator.organizatorAva}`}
             alt="organizatorAva"
             sx={{ width: 60, height: 60 }}
           />
@@ -122,7 +122,7 @@ const HelloThere = () => {
         <AvatarGroup total={props.participant.length}>
           {props.participant.map((newParticipant, index) => (
             <Avatar
-              src={newParticipant.participantAva}
+              src={`/img/users/${newParticipant.participantAva}`}
               alt={newParticipant.participantName}
               sx={{ width: 60, height: 60 }}
               key={index}

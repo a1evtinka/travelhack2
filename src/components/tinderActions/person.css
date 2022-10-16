@@ -19,9 +19,9 @@
 
 .title-event {
 /* Заголовок */
-position: absolute;
-height: 28px;
-left: 0px;
+/* position: absolute;
+height: 28px; */
+padding-left: 0px;
 right: 0px;
 top: 32px;
 
@@ -44,7 +44,7 @@ color: #1D1D1D;
 .title {
   /* Подзаголовок */
 height: 22px;
-
+margin-left:20px;
 /* Footnote */
 font-family: 'Suisse Intl';
 font-style: normal;
@@ -110,5 +110,6 @@ flex-grow: 0;
 }
 
 .tag-line {
-  flex-wrap: 'wrap'
+  display: flex;
+  justify-content:space-around;
 }
