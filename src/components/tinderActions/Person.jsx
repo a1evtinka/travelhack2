@@ -13,13 +13,13 @@ console.log(person.type)
                 </div>
 
                 <div className="person-description" style={{ padding:'0px'}}>
-                    <p className="title-event" style={{textAlign:'center', margin: "5px"}}>
+                    <p className="title-event">
                         {person.title}
                     </p>
                     <p className='title'>Даты поездки: {person.startDate} - {person.endDate}</p>
                     <p className='title'>Бюджет: ~{person.price} руб.</p>
                     <p className='title'>Вид отдыха: {person.type}</p>
-                    <p className="truncate-text" >{person.desc}</p>
+                    <div className="truncate-text">{person.desc}</div>
                     <div className='tag-line'>{person.activity.map((tag) => <div className='lable  tag-text'>#{tag}</div>)}</div>
                 </div>
             </div>
