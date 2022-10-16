@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  background-color: #fffbf3;
+}
+
+@font-face {
+  font-family: "Suisse Intl"; /* Гарнитура шрифта */
+  src: url(font/SuisseIntl-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+.event_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  min-width: 300px;
+  font-family: "Suisse Intl";
+  color: #1d1d1d;
+}
+
+.event_info_container {
+  display: flex;
+  width: 650px;
+}
+
+.event_description {
+  margin: 0px 35px;
+  font-size: 16px;
+}
+
+.organizator_and_participants_block {
+  display: flex;
+  margin: 30px 0px;
+}
+
+.organizator_name {
+  margin: 10px;
+}
+
+.plus {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  padding: 15px;
+}
+
+.event_info_table {
+  font-size: 16px;
+  margin: 30px 0px;
+  width: 600px;
+}
+
+.tags_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.one_tag_item {
+  margin-right: 15px;
+  width: 80px;
+  height: 24px;
+  color: #1d1d1d;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: -2px 8px 20px rgba(11, 70, 84, 0.15);
+
+  align-items: center;
+  text-align: center;
+}
+
+.event_title_h2 {
+  margin: 10px 0px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1d1d1d;
+}
+
+.event_date_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(29, 29, 29, 0.5);
+}
+
+.buy_button {
+  width: 85px;
+  height: 40px;
+  background: #ffcf08;
+  border-radius: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1d1d;
+  margin: 5px 0px 10px;
+}
+.buy_button:hover {
+  background-color: #ca857d;
+}
+
+.reservation_button {
+  width: 150px;
+  height: 40px;
+  background: #ffcf08;
+  border-radius: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1d1d;
+  margin-top: 5px;
+}
+.reservation_button:hover {
+  background-color: #ca857d;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+  .event_info_container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+  }
+  .event_description {
+    margin: 0px 0px;
+    text-align: center;
+  }
+  .tags_block {
+    margin: 0;
+    justify-content: center;
+  }
+  .event_info_table {
+    font-size: 16px;
+    margin: 30px 0px;
+    width: 350px;
+    align-items: flex-start;
+  }
+}
