@@ -6,7 +6,7 @@ const Lonely = ({ activeUserImage, likedUsers }) => (
         <p>Поездки, удовлетворяющих условиям поиска пока нет</p>
 
         <span className="pulse">
-      <img src={`/img/misc/${activeUserImage}`} alt="You..." />
+      <img src={"/img/users/logo.png"} alt="You..." />
     </span>
 
         <p>
