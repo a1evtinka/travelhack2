@@ -24,11 +24,11 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Катя',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
-    "id":10,
+    "id":2,
     "title": "Хайкинг на Алтае",
     "desc": 
     "Едем вдвоем на Алтай, цель - скалолазные маршруты и хайкинг, ищем скалолазов или просто спортивных попутчиков :)",
@@ -52,7 +52,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Ирина',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
@@ -79,7 +79,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 20000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Майя',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
@@ -106,7 +106,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 40000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Надя',organizatorAva: '6.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
@@ -133,7 +133,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 20000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Тёма',organizatorAva: '1.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
@@ -159,7 +159,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Марья Петровна',organizatorAva: '7.jpg', organizatorRating: 5.0},
+    "organizator": {organizatorName:'Майкл',organizatorAva: '4.jpg', organizatorRating: 5.0},
     "participant": [{participantName:'Екатерина', participantAva:'3.jpg'}]
   },
   {
@@ -187,7 +187,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Мари',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
@@ -215,11 +215,11 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 24000,
-    "organizator": {organizatorName:'Jora',organizatorAva: '3.jpg', organizatorRating: 4.2},
+    "organizator": {organizatorName:'Мари',organizatorAva: '3.jpg', organizatorRating: 4.2},
     "participant": [{participantName: 'Igor', participantAva:'1.jpg'}, {participantName:'Katya', participantAva:'2.jpg'}]
   },
   {
-    "id":2,
+    "id":9,
     "title": "Фотовыходные в Санкт-Петербурге",
     "desc": 
     "Я фотограф, еду на выходные фоткать красивые места Северной Столицы, сейчас скидка в отеле Radisson",
@@ -243,7 +243,7 @@ export const data = [
     "dislikedUsers": [],
     "likedBy": [],
     "price": 30000,
-    "organizator": {organizatorName:'Марья Петровна',organizatorAva: '7.jpg', organizatorRating: 5.0},
+    "organizator": {organizatorName:'Марья',organizatorAva: '7.jpg', organizatorRating: 5.0},
     "participant": [{participantName:'Екатерина', participantAva:'3.jpg'}]
   }
 ]
