@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
+@font-face {
+    font-family: "Suisse Intl"; /* Гарнитура шрифта */
+    src: url(../font/SuisseIntl-Regular.ttf); /* Путь к файлу со шрифтом */
+  }
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Suisse Intl";
     font-size: 20px;
     line-height: 1;
     background-color: #f7f7f7;
