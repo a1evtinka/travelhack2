@@ -12,9 +12,17 @@ const Actions = ({ person, modifySuperficialChoices }) => (
         <Like
             userId={person.id}
             modifySuperficialChoices={modifySuperficialChoices}
-            style={{width:'50px',height:'50px', margin:'0px'}}
         />
-        <Link to={`/event/${person.id}`}>Посмотреть</Link>
+
+        <Link to={`/event/${person.id}`}>
+                <button
+                    type="button"
+                    style={{width:'50px', height:'50px'}}
+                >
+                        <Link to={`/event/${person.id}`}></Link>
+                        <img src="img/misc/img_9.png" alt="Like User" />
+                </button>
+        </Link>
     </div>
 );
 
