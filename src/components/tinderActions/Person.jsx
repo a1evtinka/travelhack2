@@ -3,22 +3,25 @@ import Actions from './Actions';
 import './person.css'
 
 const Person = ({ person, modifySuperficialChoices }) => {
-    const { name, desc, image } = person;
 
+console.log(person.type)
     return (
         <>
             <div className="person">
                 <div className="person-photo">
-                    <img src={`/img/users/${image}`} alt={name} style={{height:'450px',width:"390px"}}/>
+                    <img src={`/img/users/${person.image}`} alt={person.title} style={{height:'450px',width:"390px"}}/>
                 </div>
 
                 <div className="person-description" style={{textAlign:'center', padding:'0px'}}>
-                    <p className="person-name-age" style={{textAlign:'center'}}>
+                    <p className="title-event" style={{textAlign:'center'}}>
                         {person.title}
                     </p>
-                    <p>{person.startDate} - {person.endDate}</p>
-                    <p className="truncate-text" >{desc}</p>
+                    <p className='title'>Даты поездки: {person.startDate} - {person.endDate}</p>
+                    <p className='title'>Бюджет: ~{person.price} руб.</p>
+                    <p className='title'>Вид отдыха: {person.type}</p>
+                    <p className="truncate-text" >{person.desc}</p>
                 </div>
+                    <div className='tag-line'>{person.activity.map((tag) => <div className='lable  tag-text'>#{tag}</div>)}</div>
             </div>
 
             <Actions

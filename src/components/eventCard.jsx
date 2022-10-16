@@ -19,12 +19,8 @@ function EventCard({props}) {
           </div>
           <div className='description'>{props.desc}</div>
           {/* <div className='tags'>{props.activity.map((tag) => <div className='tag'>{tag}</div>)}</div> */}
-          <div className='tags'>{props.activity}</div>
-          маршрут
+          <div className='tags'>{props.activity.map((tag) => <div>{tag}</div>)}</div>
 
-          <div>
-            <p>Маршрут:</p>
-          </div>
 
           <table border="0">
             <tr>
