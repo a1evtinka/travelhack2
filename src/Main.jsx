@@ -9,7 +9,7 @@ const Main = () => {
     <div className='footer'>
     <NavBar />
     </div>
-</div>
+    </div>
   );
 }
 
