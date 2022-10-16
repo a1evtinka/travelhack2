@@ -163,13 +163,13 @@ header .fl:last-child {
 /* Stolen CSS */
 .pulse {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: #FFDEDF;
     box-shadow: 0 0 0 rgba(204,169,44, 0.4);
     -webkit-animation: pulse 2s infinite;
-    animation: pulse 2s infinite;
+    animation: pulse 1s infinite;
     margin-top: 50px;
     margin-bottom: 35px;
     border: 3px solid #F5C9CA;
@@ -201,7 +201,7 @@ header .fl:last-child {
 @keyframes pulse {
     0% {
         -moz-box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
-        box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+        box-shadow: 0 0 0 0 pink;
     }
     100% {
         -moz-box-shadow: 0 0 35px 35px rgba(241, 201, 202, 0);
