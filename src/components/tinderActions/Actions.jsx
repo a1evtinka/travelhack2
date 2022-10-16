@@ -3,7 +3,7 @@ import Dislike from './Dislike';
 import Like from './Like';
 
 const Actions = ({ person, modifySuperficialChoices }) => (
-    <div id="actions" style={{marginTop:'0px', height:'63.5px',width:'390px', padding:'0px'}}>
+    <div id="actions" style={{marginBottom:'80px', height:'63px',width:'390px', padding:'0'}}>
         <Dislike
             userId={person.id}
             modifySuperficialChoices={modifySuperficialChoices}

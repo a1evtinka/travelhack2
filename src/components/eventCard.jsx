@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function UserPrevCard({props}) {
+function EventCard({props}) {
   // const [users, setUsers] = useState(usersProfile)
   const navigate = useNavigate();
 
@@ -58,4 +58,4 @@ function UserPrevCard({props}) {
   );
 }
 
-export default UserPrevCard;
+export default EventCard;
