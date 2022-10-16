@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {useParams} from 'react-router-dom'
 import { data } from './tinderActions/data';
 import "./eventCard.css";
@@ -8,7 +8,8 @@ import { Avatar, AvatarGroup, Badge } from "@mui/material";
 const HelloThere = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  let props = data.filter(el => +el.id === +id)[0]
+  let props1 = data.filter(el => +el.id === +id)[0]
+  const [props, setProps] = useState(props1)
   console.log("🚀 ~ file: HelloThere.jsx ~ line 11 ~ HelloThere ~ props", props)
 
   return (
@@ -131,6 +132,14 @@ const HelloThere = () => {
         </AvatarGroup>
       </div>
     </div>
+                <button
+                  onClick={() => setProps(prev => prev = {...prev, participant: [...prev.participant, {participantName: 'Дуайт', participantAva:'5.jpg'}] } )
+                  }
+                  className="reservation_button"
+                >
+                  Присоединиться
+                </button>
+                <div>{' '}</div>
   </div>
 );
 }
