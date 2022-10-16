@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import Main from './Main';
-import HelloThere from './HelloThere';
+import HelloThere from './components/HelloThere';
 
 
 function App() {

@@ -7,7 +7,7 @@ const Person = ({ person, modifySuperficialChoices }) => {
 console.log(person.type)
     return (
         <>
-            <div className="person">
+            <div className="person" style={{width:"390px"}}>
                 <div className="person-photo">
                     <img src={`/img/users/${person.image}`} alt={person.title} style={{height:'450px',width:"390px"}}/>
                 </div>
