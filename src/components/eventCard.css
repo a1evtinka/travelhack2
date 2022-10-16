@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  background-color: #fffbf3;
+
 }
 
 @font-face {
@@ -16,6 +16,7 @@
   min-width: 300px;
   font-family: "Suisse Intl";
   color: #1d1d1d;
+  background-color: #fffbf3;
 }
 
 .event_info_container {
@@ -53,6 +54,8 @@
 .tags_block {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center ;
+  align-items: center;
   margin: 10px 0px;
 }
 

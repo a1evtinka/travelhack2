@@ -4,12 +4,14 @@ import Poput from "./components/Poput/Poput";
 
 const Main = () => {
   return (
-    <div className="layout" style={{backgroundColor: 'rgba(30, 14, 0, 0.36)'}}>
-    <Poput />
-    <div className='footer'>
+    <>
+    {/* <div className="layout" style={{backgroundColor: 'rgba(30, 14, 0, 0.36)'}}> */}
+      <Poput />
+     {/* <div className='footer'> */}
     <NavBar />
-    </div>
-    </div>
+    {/* </div>
+    </div> */}
+    </>
   );
 }
 
