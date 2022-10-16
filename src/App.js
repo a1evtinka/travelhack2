@@ -1,17 +1,24 @@
 import './App.css';
 // import Tinder from "./components/tinderActions/Tinder";
 import React from ".";
-import NavBar from "./components/NavBar/NavBar";
-import Poput from "./components/Poput/Poput";
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Main from './Main';
+import HelloThere from './HelloThere';
+
 
 function App() {
   return (
-    <div className="layout" style={{backgroundColor: 'rgba(30, 14, 0, 0.36)'}}>
-        <Poput />
-        <div className='footer'>
-        <NavBar />
-        </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main/>} />
+        <Route path='/event/:id' element={<HelloThere/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
